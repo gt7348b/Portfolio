@@ -16,17 +16,16 @@ body {
   $mobile: new-breakpoint(max-width 600px 6);
 
   .header{
-
-    color: black;
+    color: gray;
     text-align: center;
     background-color: hsl(215,66,15);
-    opacity: 0.7;
+    opacity: 0.5;
+    background-image: src(images/DSC02302);
     @include padding (1em 0 1em 0);
 
     li{
       display: inline-block;
     }
-
 
     a {
       text-decoration: none;
