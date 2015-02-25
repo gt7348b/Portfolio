@@ -56,10 +56,12 @@ body {
     } // This closes out the ul
   } //This closes out the footer
 
-  .sidebar {
+  .navigation {
     //@include span-column(3);
+    text-align: center;
 
     button {
+      margin-top: 1em;
       color: white;
       border-radius: .3em;
       background-color: #776666;
