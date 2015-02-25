@@ -127,5 +127,11 @@ body {
         }
       }
     }
+
+    .library_title {
+      border-style: solid;
+      border-radius: 1.5em;
+      @include margin (2em null null null);
+    }
   }
 }
