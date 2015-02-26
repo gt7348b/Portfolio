@@ -47,11 +47,12 @@ body {
       li {
         display: inline-block;
         @include padding (0.5em 0.5em 0.5em 0.5em);
-      }
-
-      a {
-        text-decoration: none;
-        color: gray;
+        
+        a {
+          text-decoration: none;
+          color: gray;
+          padding: none;
+        }
       }
     } // This closes out the ul
   } //This closes out the footer
