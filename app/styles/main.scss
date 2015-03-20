@@ -38,6 +38,7 @@ body {
       font-style: italic;
     }
   }
+
   .footer {
     background-color: white;
 
@@ -47,7 +48,7 @@ body {
       li {
         display: inline-block;
         @include padding (0.5em 0.5em 0.5em 0.5em);
-        
+
         a {
           text-decoration: none;
           color: gray;
@@ -135,4 +136,16 @@ body {
       @include margin (2em null null null);
     }
   }
+
+  //This is for the images
+  .Foot{
+
+    ul{
+      list-style-type: none;
+
+        li{
+          display: inline-block;
+        }
+      }
+    }
 }
