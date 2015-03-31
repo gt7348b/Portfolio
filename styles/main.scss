@@ -16,17 +16,16 @@ body {
   $mobile: new-breakpoint(max-width 600px 6);
 
   .header{
-
-    color: black;
+    color: gray;
     text-align: center;
     background-color: hsl(215,66,15);
     opacity: 0.7;
+    background-image: url ('images/DSC02302.JPG');
     @include padding (1em 0 1em 0);
 
     li{
       display: inline-block;
     }
-
 
     a {
       text-decoration: none;
@@ -39,6 +38,7 @@ body {
       font-style: italic;
     }
   }
+
   .footer {
     background-color: white;
 
@@ -48,20 +48,23 @@ body {
       li {
         display: inline-block;
         @include padding (0.5em 0.5em 0.5em 0.5em);
-      }
 
-      a {
-        text-decoration: none;
-        color: gray;
+        a {
+          text-decoration: none;
+          color: gray;
+          padding: none;
+        }
       }
     } // This closes out the ul
   } //This closes out the footer
 
-  .sidebar {
+  .navigation {
     //@include span-column(3);
+    text-align: center;
 
     button {
-      color: black;
+      margin-top: 1em;
+      color: white;
       border-radius: .3em;
       background-color: #776666;
 
@@ -90,11 +93,18 @@ body {
       border-radius: .3em;
     }
 
+    img {
+      width: 5em;
+      height: auto;
+      border-radius: 1em;
+
+    }
+
     .title_img{
-      max-width: 1em;
 
       img{
-        size: 100%;
+        width: 3em;
+        height: auto;
       }
     }
 
@@ -119,5 +129,23 @@ body {
         }
       }
     }
+
+    .library_title {
+      border-style: solid;
+      border-radius: 1.5em;
+      @include margin (2em null null null);
+    }
   }
+
+  //This is for the images
+  .Foot{
+
+    ul{
+      list-style-type: none;
+
+        li{
+          display: inline-block;
+        }
+      }
+    }
 }
